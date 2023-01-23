@@ -12,4 +12,10 @@ The app can be found here: https://huggingface.co/spaces/davidt123/Whisper-trans
 # Task 2 - How to improve the model performance
  Model-centric approach:
  
+ Model-centric approaches involves some changes in the hyperparameters of the model. One possibly way of trying this, is to use the Huggingface Trainer API (https://huggingface.co/docs/transformers/hpo_train), where you can set different values of parameters (for example learning rate, per device batch size, etc). This will then go over the different values for the parameters and save the best model (the parameters that provided the best model)
+ 
+ I tried doing this, but were not able to make it work.
+ 
  Data-centric approach:
+ 
+ A data centric-approach involves doing modification to the data, or perhaps changing to another dataset that could be better suited for the task. Common voice is probably the most commonly used dataset for speach recognition, but there are other datasets one could look at. To find different datasets you can look at https://huggingface.co/datasets?task_categories=task_categories:automatic-speech-recognition&sort=downloads.
